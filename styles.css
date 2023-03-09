@@ -130,13 +130,15 @@ section {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+    
+    height: 20%;
 }
 
 #about .tile {
     border-radius: 10px;
     padding: 40px;
     box-sizing: border-box;
-
+    
     background-color: rgb(201, 205, 205);
 
     display: grid;
@@ -144,6 +146,7 @@ section {
     justify-items: center;
     text-align: center;
     font-size: 20px;
+
 }
 
 .tile h2 {
@@ -176,10 +179,8 @@ section {
 }
 
 #about .tile img {
-    width: 50%;
+    width: 32%;
 }
-
-
 
 /* =================================
     * Section para mis proyectos
@@ -366,12 +367,15 @@ section {
 
 #posts {
     padding: 10px;
-    background-color: rgb(66, 186, 255);
     display: grid;
     grid-template: repeat(2, 400px) / repeat(3, 450px);
     gap: 10px;
     justify-content: center;
     align-content: center;
+
+    background: #acb6e5;
+    background: -webkit-linear-gradient(to right, #acb6e5, #86fde8);
+    background: linear-gradient(to right, #acb6e5, #86fde8);
 }
 
 #posts .post {
@@ -485,10 +489,18 @@ section {
 }
 
 #contact form input[type="submit"] {
-    background-color: #67ca50;
+    background-color: #e7b897;
     font-weight: bold;
     font-size: 28px;
 }
+
+#contact form input[type="submit"]:hover {
+    background-color: #333230;
+    font-weight: bold;
+    font-size: 28px;
+    transition: all 2s;
+}
+
 
 #contact .social-networks a {
     color: white;
@@ -500,7 +512,9 @@ section {
     cursor: pointer;
 }
 
-/* Parte final de la website parte del footer */
+/* ========================================== 
+    * Parte final de la website parte del footer
+========================================== */
 .developer {
     min-height: 120px;
     margin-top: -22px;
@@ -520,7 +534,20 @@ section {
 .creador h4 {
     text-align: center;
     font-size: 30px;
+    background: linear-gradient(to right, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
+
+.creador h4:hover {
+    background: linear-gradient(to right, #070707, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 3s;
+}
+
+
 /* ==============================
 * Parte para los media queries para responsive
 =============================== */
